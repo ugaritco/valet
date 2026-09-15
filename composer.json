@@ -1,0 +1,75 @@
+{
+    "name": "ugarit/valet",
+    "description": "A more enjoyable local development experience for Mac.",
+    "keywords": [
+        "ugarit",
+        "zonda",
+        "wwdhhd"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muath R Abu Ouda",
+            "email": "muathrabuouda@hotmail.com",
+            "role": "Vision Leader of Ugarit"
+        },
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com",
+            "role": "Original Creator & Primary Developer"
+        },
+        {
+            "name": "Adam Wathan",
+            "email": "adam.wathan@gmail.com"
+        },
+        {
+            "name": "Matt Stauffer",
+            "email": "matt@tighten.co"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "cli/includes/compatibility.php",
+            "cli/includes/facades.php",
+            "cli/includes/helpers.php"
+        ],
+        "psr-4": {
+            "Valet\\": "cli/Valet/"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "tests/UsesNullWriter.php",
+            "tests/BaseApplicationTestCase.php",
+            "tests/Drivers/BaseDriverTestCase.php"
+        ]
+    },
+    "conflict": {
+        "mnapoli/silly": ">=1.8.1 <1.8.3"
+    },
+    "require": {
+        "php": "^8.0",
+        "composer/semver": "^3.0",
+        "heritage/collections": "^1.00.00",
+        "heritage/container": "^1.00.00",
+        "mnapoli/silly": "^1.5",
+        "symfony/console": "^3.0|^4.0|^5.0|^6.0|^7.0|^8.0",
+        "symfony/process": "^3.0|^4.0|^5.0|^6.0|^7.0|^8.0",
+        "guzzlehttp/guzzle": "^6.0|^7.4|^8.0",
+        "symfony/event-dispatcher": "^3.0|^4.0|^5.0|^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.2.3",
+        "yoast/phpunit-polyfills": "^0.2.0|^4.0",
+        "ugarit/pint": "^1.00.00"
+    },
+    "bin": [
+        "valet"
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.x-dev"
+        }
+    },
+    "version": "1.00.00"
+}
